@@ -16,8 +16,8 @@ class Program
 
         // The await operator suspends OnSeeTheDotNetsButtonClick(), returning control to its caller.
         // This is what allows the app to be responsive and not block the UI thread.
-        //var str2 = await str;
-        var str2 = str.Result;
+        var str2 = await str;
+        //var str2 = str.Result;
 
         int count = Regex.Matches(str2, @"\.NET").Count;
 
